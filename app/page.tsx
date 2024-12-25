@@ -4,15 +4,15 @@ import { motion } from 'framer-motion'
 import Link from 'next/link'
 import { Button } from "@/components/ui/button"
 import { DownloadIcon, BriefcaseIcon, MailIcon, Calendar } from 'lucide-react'
-import { WavingHand } from './components/WavingHand'
-import About from './components/About'
-import Skills from './components/Skills'
-import Portfolio from './components/Portfolio'
-import Experience from './components/Experience'
+import { WavingHand } from '../components/WavingHand'
+import About from '../components/About'
+import Skills from '../components/Skills'
+import Portfolio from '../components/Portfolio'
+import Experience from '../components/Experience'
 import dynamic from 'next/dynamic'
-import Contact from './components/Contact'
-import Footer from './components/Footer'
-const CalendlyPopupButton = dynamic(() => import('./components/Calendly'), { ssr: false })
+import Contact from '../components/Contact'
+import Footer from '../components/Footer'
+const CalendlyPopupButton = dynamic(() => import('../components/Calendly'), { ssr: false })
 
 export default function Home() {
   return (
