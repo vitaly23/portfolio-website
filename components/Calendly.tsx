@@ -16,18 +16,30 @@ const CalendlyPopupButton = () => {
     return null;
   }
 
+  // return (
+  //   <Button variant="gradient" size="lg" className="shadow-lg" asChild>
+  //     <PopupButton
+  //       url="https://calendly.com/d/cqpx-rwy-cck?hide_gdpr_banner=1"
+  //       rootElement={document.body}
+  //       text={
+  //         <span className="flex items-center">
+  //           <Calendar className="mr-2 h-5 w-5 text-white" />
+  //           Schedule a meeting
+  //         </span>
+  //       }
+  //     />
+  //   </Button>
+  // );
   return (
     <Button variant="gradient" size="lg" className="shadow-lg" asChild>
-      <PopupButton
-        url="https://calendly.com/d/cqpx-rwy-cck?hide_gdpr_banner=1"
-        rootElement={document.body}
-        text={
-          <span className="flex items-center">
-            <Calendar className="mr-2 h-5 w-5 text-white" />
-            Schedule a meeting
-          </span>
-        }
-      />
+      <div>
+        <Calendar className="mr-2 h-5 w-5 text-white" />
+        <PopupButton
+          url="https://calendly.com/d/cqpx-rwy-cck?hide_gdpr_banner=1"
+          rootElement={document.body}
+          text={"Schedule a meeting"}
+        />
+      </div>
     </Button>
   );
 };
